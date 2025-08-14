@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>出車紀錄填寫</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>出車紀錄填寫</h2>
+<form id="dispatchForm">
+    <label>案類：
+        <select id="caseType">
+            <option>緊急救護</option>
+            <option>其他</option>
+        </select>
+    </label>
+    <label>案別：
+        <select id="caseCategory">
+            <option>急病</option>
+            <option>創傷</option>
+            <option>路倒</option>
+            <option>車禍</option>
+            <option>溺水</option>
+            <option>燒燙傷</option>
+            <option>其他</option>
+        </select>
+    </label>
+    <label>派遣車輛：
+        <select id="vehicle">
+            <option>港南91</option>
+            <option>港南92</option>
+            <option>港南93</option>
+            <option>港南94</option>
+        </select>
+    </label>
+    <label>救護人員 1：
+        <input type="text" id="person1" placeholder="輸入姓名">
+    </label>
+    <label>救護人員 2：
+        <input type="text" id="person2" placeholder="輸入姓名">
+    </label>
+    <label>派遣狀態：
+        <select id="status">
+            <option>已送至醫院治療</option>
+            <option>已返隊</option>
+        </select>
+    </label>
+    <label>派遣時間：
+        <input type="text" id="time" readonly>
+    </label>
+    <button type="submit">送出紀錄</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
